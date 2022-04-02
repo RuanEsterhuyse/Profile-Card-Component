@@ -1,0 +1,135 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Dark-blue: hsl(229, 23%, 23%);
+  --Dark-grayish: hsl(227, 10%, 46%);
+  --Light-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image:
+      url(./images/bg-pattern-top.svg),
+      url(./images/bg-pattern-bottom.svg);
+  background-position: right 48vw bottom 40vh, left 50vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--Dark-cyan);
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card {
+  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  width: 35.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.6em;
+  text-align: center;
+  padding-top: 8.8rem;
+
+}
+
+
+h1,
+h3 {
+  font-size: 1.8rem;
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+
+span {
+  color: var(--Dark-grayish);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.44rem;
+  color: var(--Dark-grayish);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+h4 {
+  font-size: 1.04rem;
+  letter-spacing: 0.24em;
+  color: var(--Dark-grayish);
+  font-weight: 400;
+}
+
+
+
+
+img {
+  border-radius: 50%;
+  height: 10.4em;
+  width: 10.4em;
+  border: 0.4em solid white;
+}
+
+h1 {
+  padding: 2rem 0 0.8rem 0;
+}
+
+span {
+  margin-left: 0.48em;
+}
+
+h2 {
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  width: 100%;
+  padding-bottom: 2.8rem;
+}
+
+h3 {
+  padding-top: 1.6rem;
+}
+
+.card__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  padding: 0.8rem 0 2.4rem 0;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 3rem;
+  text-align: center;
+  font-size:2rem;
+  color: hsl(0, 0%, 80%);
+  
+ 
+}
+.attribution a {
+  color: var(--Dark-blue);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 40rem), screen and (max-height: 50rem) {
+  .attribution {
+    display: none;
+  }
+}
